@@ -13,7 +13,7 @@ This repository contains 100 examples from the dataset.
 ## Loading a mesh:
 To load a mesh use the following:
 ```
-Mesh = SynthAortaLoadLinMesh(Index, RefLevel)
+Mesh = SynthAortaLoadLinMesh(Index, RefLevel);
 ```
 where you choose the example number you want(Index) and the refinement level(RefLevel). The possible options for the refinement levels are 1, 2, 4 and 8; the meshes are nested.
 
@@ -23,8 +23,11 @@ SynthAortaMeshLinHexaToMSH(Mesh, OutputFilename, [], []);
 ```
 and then open the .msh file using Gmsh.
 
-To load and visualize the skeleton(centerline) with the radius information use: (you can also toggle the visualization on/off with the flag at the beginning of the function)
+To load and visualize the skeleton(centerline) with the radius information use:
+```
 Skeleton = SynthAortaLoadSkeleton(Index);
+```
+The visualization can be toggled off with a flag at the beginning of the function.
 
 Additional functionality should be added along the way, however it has to be done here since the data published at the repository of the Graz University of Technology cannot be modified.
 
