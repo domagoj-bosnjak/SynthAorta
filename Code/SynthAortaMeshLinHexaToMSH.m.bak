@@ -13,7 +13,8 @@ function SynthAortaMeshLinHexaToMSH(Mesh3dHexaLin, OutputFilename, ...
 %% Element and surface(boundary) elements may be assigned arbitrary tags, otherwise
 %% ElemTags and ElemTagsBdry can be empty []
 
-%% The mesh is assumed to be linear and hexahedral. 
+%% The mesh is assumed to be linear and hexahedral. Arbitrary element tags
+%% can be assigned if necessary, otherwise they can be left empty
 
 % Minor: if the input filename is a string convert to chars
 if isstring(OutputFilename)
