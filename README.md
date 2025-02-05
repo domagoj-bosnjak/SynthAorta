@@ -8,10 +8,10 @@ The full dataset in the identical format as the present one may be found at: [TB
 For a unified format, and easier visualization, it is recommended to install the open source 3D finite element mesh generator [Gmsh](https://gmsh.info/).
 
 # Usage
-This repository contains 100 examples from the dataset.
+This repository contains 100 examples from the dataset. Everything is written for MATLAB/Octave.
 
 ## Loading a mesh:
-To load a mesh use the following:
+To load a mesh use the following function, assuming you are in the folder of the dataset: (otherwise, modify the filepaths in the loading function)
 ```
 Mesh = SynthAortaLoadLinMesh(Index, RefLevel);
 ```
