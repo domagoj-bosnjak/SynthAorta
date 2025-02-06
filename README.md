@@ -34,7 +34,7 @@ SynthAortaInitialize(InputPath);
 Now you are ready to use the code! Each future function will require the InputPath variable.
 
 ## Loading a mesh:
-To load a mesh use the following function, assuming you are in the folder of the dataset: (otherwise, modify the filepaths in the loading function)
+To load a mesh use the following function:
 ```
 Mesh = SynthAortaLoadLinMesh(Index, RefLevel, InputPath);
 ```
