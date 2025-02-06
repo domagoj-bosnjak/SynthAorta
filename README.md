@@ -15,6 +15,8 @@ Everything is written for MATLAB/Octave. The following two steps are necessary t
 1. To make sure all the paths are properly added, define a variable that says where you saved the SynthAorta folder and add it to MATLAB paths, e.g.,  
 ```
 InputPath = "C:/Users/YourUsername/Documents/github/SynthAorta/"
+```
+```
 addpath(InputPath);
 ```
 2. To initialize the necessary paths to the code use:
@@ -33,6 +35,8 @@ where you choose the example number you want(Index, can be 1 to 100 for the test
 To visualize the mesh, first convert it to the .msh format using
 ```
 OutputFilename = "YourFilename.msh";
+```
+```
 SynthAortaMeshLinHexaToMSH(Mesh, OutputFilename, [], []);
 ```
 and then open the .msh file using Gmsh. Note that if you do not add ".msh" it will be added automatically. The meshes are also equipped with their extracted surface; you can verify this in Gmsh using Tools -> Visibility -> (Select surface or volume) -> Apply.
