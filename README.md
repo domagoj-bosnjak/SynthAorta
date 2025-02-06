@@ -3,8 +3,16 @@ The main code repo for the paper [SynthAorta: A 3D Mesh Dataset of Parametrized 
 
 This repository contains 100 examples from the dataset; with 4 nested meshes of varying spatial refinement level per case. The Examples folder contains the 4 .msh files related to the first mesh case.
 
-# Dataset link
-The full dataset in the identical format as the present one may be found at: [TBD, very soon!].
+# Dataset info and formats
+The full dataset in the identical format as the present one may be found at: [TBD, very soon!]. The dataset contains the following data for each case, in binary format:
+
+1. Mesh nodes as a vector: $[x_1,y_1,z_1,x_2,y_2,z_2,\dots,x_n,y_n,z_n]$ -- in float ('single') format
+2. Skeleton nodes as a vector: $[x_1,y_1,z_1,x_2,y_2,z_2,\dots,x_n,y_n,z_n]$ -- in float ('single') format
+3. Skeleton radii as a vector: $[r_1, r_2, \dots, r_n]$ -- in float ('single') format
+4. Connectivity matrices for 4 refinement levels, shared by all meshes (hexahedral) -- in uint32 format
+5. Equivalent connectivity matrices for the mesh surface (quadrilateral) -- in uint32 format
+6. Connectivity matrix for skeleton segments -- in uint32 format
+   
 
 # Requirements
 For a unified format, and easier visualization, it is recommended to install the open source 3D finite element mesh generator [Gmsh](https://gmsh.info/).
