@@ -19,6 +19,10 @@ function SynthAortaMeshLinHexaToMSH(Mesh3dHexaLin, OutputFilename, ...
 if isstring(OutputFilename)
     OutputFilename = convertStringsToChars(OutputFilename);
 end
+% Ensure the OutputFilename ends with .msh
+if ~endsWith(OutputFilename, '.msh')
+    OutputFilename = [OutputFilename, '.msh'];
+end
 
 %% Check input.
 if (~isfield(Mesh3dHexaLin, {'xx'}) || ...
@@ -48,7 +52,8 @@ if isempty(ElemTagsBdry)
 end
 
 %% Open output file
-fid = fopen (['./', OutputFilename], 'w');
+% fid = fopen (['./', OutputFilename], 'w');
+fid = fopen (OutputFilename, 'w');
 
 %% Print header
 fprintf (fid, '$MeshFormat\n2.2 0 8\n$EndMeshFormat\n');
