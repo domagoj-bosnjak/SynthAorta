@@ -12,11 +12,12 @@ For a unified format, and easier visualization, it is recommended to install the
 # Usage
 Everything is written for MATLAB/Octave. The following two steps are necessary to use the code.
 
-1. To make sure all the paths are properly added, define a variable that says where you saved the SynthAorta folder, e.g.,  
+1. To make sure all the paths are properly added, define a variable that says where you saved the SynthAorta folder and add it to MATLAB paths, e.g.,  
 ```
-InputPath = "C:/Users/YourUsername/Documents/github/SynthAorta/" 
+InputPath = "C:/Users/YourUsername/Documents/github/SynthAorta/"
+addpath(InputPath);
 ```
-2. To initialize the path to the code use:
+2. To initialize the necessary paths to the code use:
 ```
 SynthAortaInitialize(InputPath);
 ```
