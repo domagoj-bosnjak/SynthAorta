@@ -4,7 +4,7 @@ The main code repo for the paper [SynthAorta: A 3D Mesh Dataset of Parametrized 
 This repository contains 100 examples from the dataset; with 4 nested meshes of varying spatial refinement level per case. The Examples folder contains the 4 .msh files related to the first mesh case.
 
 # Dataset info and formats
-The full dataset in the identical format as the present one may be found at: [TBD, very soon!]. The dataset contains the following data for each case, in binary format:
+The full dataset in the identical format as the present one may be found at the repository of the Graz University of Technology: https://repository.tugraz.at/records/0zr9z-tek56 (DOI: 10.3217/0zr9z-tek56). The dataset contains the following data for each case, in binary format:
 
 1. Mesh nodes as a vector: $[x_1,y_1,z_1,x_2,y_2,z_2,\dots,x_n,y_n,z_n]$ -- in float ('single') format
 2. Skeleton nodes as a vector: $[x_1,y_1,z_1,x_2,y_2,z_2,\dots,x_n,y_n,z_n]$ -- in float ('single') format
