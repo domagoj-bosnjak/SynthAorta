@@ -12,6 +12,7 @@ The full dataset in the identical format as the present one may be found at the 
 4. Connectivity matrices for 4 refinement levels, shared by all meshes (hexahedral) -- in uint32 format
 5. Equivalent connectivity matrices for the mesh surface (quadrilateral) -- in uint32 format
 6. Connectivity matrix for skeleton segments -- in uint32 format
+7. Parameter vectors for each example -- in single format
    
 
 # Requirements
